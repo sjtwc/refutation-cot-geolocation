@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.Rhistory
+
+# Local data and artifacts
+data/raw/
+artifacts/checkpoints/*.zip
+artifacts/checkpoints/*.safetensors
+artifacts/logs/*
+!artifacts/logs/.gitkeep
+artifacts/predictions/*
+!artifacts/predictions/.gitkeep
+
+# Large media
+*.pptx
+*.mp4
+
+# Secrets
+.env

@@ -11,12 +11,13 @@ venv/
 
 # Local data and artifacts
 data/raw/
-artifacts/checkpoints/*.zip
-artifacts/checkpoints/*.safetensors
+artifacts/checkpoints/*
+!artifacts/checkpoints/.gitkeep
 artifacts/logs/*
 !artifacts/logs/.gitkeep
 artifacts/predictions/*
 !artifacts/predictions/.gitkeep
+*.partial.jsonl
 
 # Large media
 *.pptx

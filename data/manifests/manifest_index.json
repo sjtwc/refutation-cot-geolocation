@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "seed": 42,
+  "notes": [
+    "eval_4800 is sampled from the pool after excluding all 967 training image paths",
+    "eval_1000 is a nested random subset of eval_4800",
+    "coordinates in train_967 are country centroids plus noise, not GPS"
+  ],
+  "source": {
+    "pool": "data/manifests/synthetic_pool_6434.json",
+    "pool_count": 6434,
+    "pool_file_sha256": "bd31c0a050a00b6086ab804a831030748e418fb7d1e2e04dfb31d73f0cca7126",
+    "train": "data/synthetic/refutation_1k_final.json",
+    "train_file_sha256": "eb5077ebf1996b80424cc64a3a7ea5153d3b2a7f607c85a6f923213930868323"
+  },
+  "manifests": {
+    "train_967.json": {
+      "path": "data/manifests/train_967.json",
+      "count": 967,
+      "sha256": "ffd4387cf241833b5c33e3b4495204bfa7b2793467c653cd1c8e6c830b059f38"
+    },
+    "eval_4800.json": {
+      "path": "data/manifests/eval_4800.json",
+      "count": 4800,
+      "sha256": "6968331817598b5a425df4c3926d3077f7692465c6741e418c27d82e9c175035"
+    },
+    "eval_1000.json": {
+      "path": "data/manifests/eval_1000.json",
+      "count": 1000,
+      "sha256": "541b5a4b36a8e7bc3611aa4f045671fd64f386ba1546082361971b0cb6cf86e8"
+    }
+  },
+  "disjointness": {
+    "excluded_train_images": 967,
+    "remaining_pool": 5467,
+    "eval_4800_train_overlap": 0,
+    "eval_1000_train_overlap": 0,
+    "eval_1000_subset_of_eval_4800": true
+  }
+}

@@ -1,0 +1,79 @@
+country,support,correct,unparsed,accuracy
+United States,244,145,18,0.5942622950819673
+Japan,89,51,7,0.5730337078651685
+France,62,16,4,0.25806451612903225
+United Kingdom,52,22,2,0.4230769230769231
+Brazil,50,0,7,0.0
+Russia,40,2,1,0.05
+Canada,29,16,2,0.5517241379310345
+South Africa,28,1,2,0.03571428571428571
+Australia,27,22,0,0.8148148148148148
+Spain,21,8,3,0.38095238095238093
+Germany,20,7,2,0.35
+Italy,16,3,1,0.1875
+Mexico,16,0,3,0.0
+Finland,15,2,0,0.13333333333333333
+Poland,15,0,1,0.0
+Norway,14,6,0,0.42857142857142855
+Thailand,14,0,1,0.0
+Argentina,13,0,0,0.0
+Israel,12,7,1,0.5833333333333334
+New Zealand,11,4,1,0.36363636363636365
+Singapore,10,2,1,0.2
+Sweden,9,0,0,0.0
+Czechia,8,0,0,0.0
+Ireland,8,4,0,0.5
+Malaysia,8,1,0,0.125
+Portugal,8,1,1,0.125
+Türkiye,8,1,0,0.125
+Austria,7,2,1,0.2857142857142857
+Botswana,7,0,0,0.0
+Chile,7,0,0,0.0
+Netherlands,7,1,1,0.14285714285714285
+Taiwan,7,0,0,0.0
+Colombia,6,0,0,0.0
+Ghana,6,0,0,0.0
+South Korea,6,4,1,0.6666666666666666
+Ukraine,6,0,0,0.0
+Greece,5,1,1,0.2
+Hungary,5,0,1,0.0
+Indonesia,5,2,0,0.4
+Switzerland,5,0,1,0.0
+Belgium,4,2,1,0.5
+India,4,1,0,0.25
+Philippines,4,4,0,1.0
+Bangladesh,3,1,0,0.3333333333333333
+Denmark,3,0,1,0.0
+Lithuania,3,0,1,0.0
+Malta,3,0,0,0.0
+Peru,3,0,0,0.0
+Romania,3,3,0,1.0
+Senegal,3,0,0,0.0
+Slovakia,3,0,0,0.0
+Albania,2,0,1,0.0
+Cambodia,2,1,0,0.5
+Croatia,2,1,0,0.5
+Greenland,2,0,0,0.0
+Laos,2,0,0,0.0
+Latvia,2,0,0,0.0
+Montenegro,2,0,0,0.0
+Nigeria,2,1,0,0.5
+Serbia,2,0,0,0.0
+Uganda,2,0,1,0.0
+United States Virgin Islands,2,0,0,0.0
+Bulgaria,1,0,0,0.0
+Dominican Republic,1,0,0,0.0
+Ecuador,1,0,0,0.0
+Egypt,1,1,0,1.0
+Estonia,1,0,0,0.0
+Iceland,1,0,0,0.0
+Kenya,1,0,0,0.0
+Lesotho,1,0,0,0.0
+Luxembourg,1,0,0,0.0
+Martinique,1,0,0,0.0
+Mongolia,1,0,0,0.0
+Pakistan,1,1,0,1.0
+Palestine,1,0,0,0.0
+Puerto Rico,1,0,0,0.0
+Slovenia,1,0,0,0.0
+Uruguay,1,0,0,0.0

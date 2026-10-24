@@ -1,0 +1,11 @@
+{
+  "total": 1000,
+  "parsed": 284,
+  "unparsed": 716,
+  "correct": 112,
+  "accuracy": 0.112,
+  "accuracy_parsed": 0.39436619718309857,
+  "coverage": 0.284,
+  "macro_accuracy": 0.03679898130757222,
+  "countries": 78
+}

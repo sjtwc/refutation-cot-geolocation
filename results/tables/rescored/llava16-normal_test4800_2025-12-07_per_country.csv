@@ -1,0 +1,99 @@
+country,support,correct,unparsed,accuracy
+United States,1172,673,85,0.5742320819112628
+Japan,397,215,24,0.5415617128463476
+France,304,77,31,0.2532894736842105
+United Kingdom,256,138,25,0.5390625
+Brazil,238,0,20,0.0
+Russia,168,12,16,0.07142857142857142
+Australia,140,109,16,0.7785714285714286
+Canada,135,55,13,0.4074074074074074
+South Africa,118,4,12,0.03389830508474576
+Finland,112,5,3,0.044642857142857144
+Spain,95,30,7,0.3157894736842105
+Mexico,81,1,6,0.012345679012345678
+Poland,81,0,9,0.0
+Thailand,81,15,3,0.18518518518518517
+Norway,76,45,5,0.5921052631578947
+Singapore,71,3,11,0.04225352112676056
+Italy,68,13,6,0.19117647058823528
+Sweden,68,3,2,0.04411764705882353
+Argentina,54,0,4,0.0
+Germany,54,27,7,0.5
+Netherlands,52,3,6,0.057692307692307696
+New Zealand,51,12,5,0.23529411764705882
+Taiwan,45,0,1,0.0
+Malaysia,42,11,3,0.2619047619047619
+Chile,38,0,3,0.0
+Ireland,35,11,5,0.3142857142857143
+Israel,34,14,3,0.4117647058823529
+Romania,34,13,2,0.38235294117647056
+Indonesia,30,5,2,0.16666666666666666
+Austria,28,5,6,0.17857142857142858
+Greece,28,4,4,0.14285714285714285
+Peru,27,0,2,0.0
+Türkiye,26,2,3,0.07692307692307693
+Czechia,24,1,1,0.041666666666666664
+South Korea,24,14,2,0.5833333333333334
+Portugal,23,0,0,0.0
+Colombia,22,0,1,0.0
+Philippines,22,14,0,0.6363636363636364
+Belgium,20,15,2,0.75
+Botswana,20,0,1,0.0
+Denmark,19,0,2,0.0
+Bulgaria,18,0,3,0.0
+Kenya,16,1,2,0.0625
+Bangladesh,14,1,2,0.07142857142857142
+Cambodia,14,2,1,0.14285714285714285
+Switzerland,14,2,1,0.14285714285714285
+Ghana,13,0,1,0.0
+Latvia,12,0,1,0.0
+Nigeria,12,5,1,0.4166666666666667
+Slovakia,12,1,1,0.08333333333333333
+Ukraine,12,0,1,0.0
+Guatemala,11,0,0,0.0
+India,11,6,0,0.5454545454545454
+Lithuania,11,0,1,0.0
+Bolivia,10,0,2,0.0
+Croatia,10,1,1,0.1
+Hong Kong,10,1,0,0.1
+Hungary,10,2,1,0.2
+Slovenia,10,2,0,0.2
+Ecuador,9,0,0,0.0
+Sri Lanka,9,0,0,0.0
+Estonia,8,0,0,0.0
+Uganda,8,0,2,0.0
+Jordan,7,0,0,0.0
+Laos,7,0,0,0.0
+Lesotho,7,0,1,0.0
+Mongolia,7,0,1,0.0
+Serbia,7,0,0,0.0
+United Arab Emirates,7,1,1,0.14285714285714285
+Uruguay,7,0,0,0.0
+Eswatini,6,0,0,0.0
+Kyrgyzstan,6,0,1,0.0
+Malta,6,0,1,0.0
+Senegal,6,0,0,0.0
+Tunisia,6,0,0,0.0
+Iceland,4,0,1,0.0
+Madagascar,4,1,0,0.25
+Palestine,4,0,0,0.0
+Puerto Rico,4,0,0,0.0
+Albania,3,0,1,0.0
+Dominican Republic,3,0,0,0.0
+Egypt,3,2,0,0.6666666666666666
+Luxembourg,3,0,0,0.0
+Montenegro,3,0,1,0.0
+North Macedonia,3,0,0,0.0
+Pakistan,3,0,0,0.0
+Andorra,2,0,1,0.0
+Faroe Islands,2,0,0,0.0
+Isle of Man,2,0,0,0.0
+United States Virgin Islands,2,0,0,0.0
+Vietnam,2,0,0,0.0
+Bhutan,1,0,0,0.0
+Costa Rica,1,0,0,0.0
+Curaçao,1,0,0,0.0
+Macau,1,0,0,0.0
+Northern Mariana Islands,1,0,0,0.0
+Réunion,1,0,0,0.0
+San Marino,1,0,0,0.0

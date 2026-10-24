@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "src"))
 
 from geoloc.countries import canonicalize_label, load_alias_data  # noqa: E402
+from geoloc.eval.model_loader import load_model  # noqa: E402
 from geoloc.manifest import (  # noqa: E402
     compute_manifest_sha256,
     load_records,
@@ -49,6 +50,23 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--local-files-only", action="store_true")
     parser.add_argument(
+        "--load-in-4bit",
+        action="store_true",
+        help="Load the base model in NF4 4-bit (CUDA only)",
+    )
+    parser.add_argument(
+        "--dtype",
+        choices=["auto", "bfloat16", "float16", "float32"],
+        default="auto",
+        help="Compute dtype; use float16 for a T4",
+    )
+    parser.add_argument(
+        "--device-map",
+        default="auto",
+        help="auto, cuda, cuda:0, mps, or cpu",
+    )
+    parser.add_argument("--attn-implementation", default=None)
+    parser.add_argument(
         "--allow-train-overlap",
         action="store_true",
         help="Skip the frozen training-manifest overlap check (not recommended)",
@@ -67,33 +85,6 @@ def check_training_overlap(manifest: list[dict[str, Any]]) -> None:
             f"manifest overlaps training data on {len(overlap)} images, "
             f"e.g. {sorted(overlap)[:3]}"
         )
-
-
-def load_model(
-    base_model: str, adapter: str, local_files_only: bool
-) -> tuple[Any, Any, Any]:
-    import torch
-    from peft import PeftModel
-    from transformers import AutoProcessor, LlavaNextForConditionalGeneration
-
-    adapter_path = None if adapter.lower() == "none" else adapter
-    processor_source = adapter_path if adapter_path and Path(adapter_path).exists() else base_model
-    processor = AutoProcessor.from_pretrained(
-        processor_source, local_files_only=local_files_only
-    )
-    if processor.tokenizer.pad_token is None:
-        processor.tokenizer.pad_token = processor.tokenizer.eos_token
-
-    base = LlavaNextForConditionalGeneration.from_pretrained(
-        base_model,
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        low_cpu_mem_usage=True,
-        local_files_only=local_files_only,
-    )
-    model = PeftModel.from_pretrained(base, adapter_path) if adapter_path else base
-    model.eval()
-    return model, processor, torch
 
 
 def make_prompt(style: str) -> str:
@@ -138,9 +129,19 @@ def main() -> None:
             continue
         if model is None:
             model, processor, torch = load_model(
-                args.base_model, args.adapter, args.local_files_only
+                args.base_model,
+                args.adapter,
+                local_files_only=args.local_files_only,
+                load_in_4bit=args.load_in_4bit,
+                dtype=args.dtype,
+                device_map=args.device_map,
+                attn_implementation=args.attn_implementation,
             )
-            print(f"loaded {args.base_model} adapter={args.adapter}")
+            print(
+                f"loaded {args.base_model} adapter={args.adapter} "
+                f"dtype={args.dtype} device_map={args.device_map} "
+                f"4bit={args.load_in_4bit}"
+            )
 
         image_path = resolve_image_path(item, args.image_root)
         if not image_path.exists():
